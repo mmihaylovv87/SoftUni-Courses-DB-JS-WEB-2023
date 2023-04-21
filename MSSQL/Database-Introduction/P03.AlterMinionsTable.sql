@@ -1,0 +1,6 @@
+ALTER TABLE [Minions]
+	ADD CONSTRAINT [FK_Minions_TownId]
+	FOREIGN KEY [TownId] REFERENCES Towns([Id])
+
+ALTER TABLE [Minions]
+ADD [TownId] INT NOT NULL
